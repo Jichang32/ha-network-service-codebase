@@ -46,6 +46,7 @@ def report(category: str, date: str) -> Report:
     report.b = sum(r.b for r in data_list)
     report.c = sum(r.c for r in data_list)
     report.d = sum(r.d for r in data_list)
+    report.material = sum(r.material for r in data_list)
     return report
 
 
